@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Heebo:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1,
+p {
+    direction: rtl;
+    font-family: Heebo;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 66px;
+    color: #FDBD03;
+}
+
+p {
+    width: 350px;
+    font-size: 20px;
+    color: #020253;
+    margin-top: 10px;
+
+}
+
+
+.topIcon {
+    height: 110px;
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FDBD03;
+    border-radius: 90px;
+    margin: 50px 0 0 50px;
+}
+
+.topIcon img {
+    height: 70px;
+    width: 70px;
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.leftTop {
+    height: 20vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.leftMid {
+    height: 60vh;
+    width: 50vw;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.leftBot {
+    height: 20vh;
+    width: 50vw;
+    border-bottom: 20px solid #FDBD03;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+.right {
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightTop {
+    height: 5vh;
+    display: flex;
+    justify-content: end;
+}
+
+.rightTop span {
+    background-color: #FDBD03;
+    height: 20px;
+    width: 500px;
+}
+
+.right img {
+    height: 700px;
+    width: 500px;
+    margin: 0 0 50px 50px;
+}
+
+.rightBot {
+    height: 95vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+form {
+    direction: rtl;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+
+
+.frow {
+    display: flex;
+    flex-direction: row;
+}
+
+.fcol {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    background-color: #E5EEFF;
+    height: 50px;
+    width: 17vw;
+    margin-left: 20px;
+    border: 0;
+    border-bottom: 5px solid #FDBD03;
+}
+
+textarea {
+    background-color: #E5EEFF;
+    height: 200px;
+    width: 35vw;
+    border: 0;
+    border-bottom: 5px solid #FDBD03;
+    resize: none;
+}
+
+label {
+    font-family: Heebo;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #FDBD03;
+    font-family: Heebo;
+    font-size: 20px;
+    font-weight: 700;
+    height: 55px;
+    width: 155px;
+    border: 0;
+}
+
+.botIcon {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FDBD03;
+    border-radius: 90px;
+    margin: 0 20px 20px 50px;
+}
+
+.botIcon img {
+    height: 50px;
+    width: 50px;
+}
+
+
+/* Media */
+@media (max-width:1200px) {
+
+    .botIcon {
+        margin: 0 20px 20px 20px;
+    }
+
+    input {
+        width: 19vw;
+    }
+
+    textarea {
+        width: 40vw;
+    }
+
+}
+
+@media (max-width:992px) {
+
+    .right img {
+        height: 500px;
+        width: 400px;
+
+    }
+
+    .frow {
+        flex-direction: column;
+    }
+
+    label {
+        margin-top: 10px;
+    }
+
+    input {
+        width: 350px;
+    }
+
+    textarea {
+        width: 350px;
+    }
+
+    .botIcon {
+        height: 80px;
+        width: 80px;
+        margin: 0 10px 10px 10px;
+    }
+
+    .botIcon img {
+        height: 35px;
+        width: 35px;
+    }
+}
+
+@media (max-width:768px) {
+    section {
+        flex-direction: column-reverse;
+    }
+
+    .rightTop {
+        height: 10vh;
+        width: 100vw;
+    }
+
+    .rightTop span {
+        width: 75vw;
+    }
+
+    .rightBot {
+        height: 10vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .right img {
+        height: 120px;
+        width: 100px;
+        margin: 0;
+    }
+
+    .leftTop {
+        display: none;
+    }
+
+    .leftMid {
+        height: 40vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .leftBot {
+        height: 40vh;
+        width: 100vw;
+        justify-content: center;
+    }
+
+    .box {
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 16px;
+        text-align: center;
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+
+    .frow {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    input {
+        height: 40px;
+        width: 400px;
+        margin: 0 0 10px 0;
+    }
+
+    textarea {
+        height: 100px;
+        width: 400px;
+    }
+
+    label {
+        font-size: 14px;
+        margin: 0 0 5px 0;
+    }
+
+    .btn {
+        font-size: 16px;
+        height: 40px;
+        width: 400px;
+    }
+
+    .botIcon {
+        height: 75px;
+        width: 75px;
+        background-color: #FDBD03;
+        border-radius: 90px;
+        margin-right: 45px;
+    }
+
+    .botIcon img {
+        height: 35px;
+        width: 35px;
+    }
+}
+
+@media (max-width:576px) {
+    section {
+        flex-direction: column-reverse;
+    }
+
+    .leftTop {
+        display: none;
+    }
+
+
+    .right img {
+        height: 120px;
+        width: 100px;
+    }
+
+
+    h1 {
+        font-size: 40px;
+        margin-bottom: 5px;
+    }
+
+    p {
+        font-size: 16px;
+        margin-bottom: 20px;
+        padding: 0 40px;
+        text-align: center;
+    }
+
+    .frow {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input {
+        height: 40px;
+        width: 300px;
+        margin-bottom: 10px;
+    }
+
+    textarea {
+        height: 100px;
+        width: 300px;
+    }
+
+    label {
+        font-size: 14px;
+        margin: 0 0 5px 0;
+    }
+
+    .btn {
+        font-size: 16px;
+        height: 40px;
+        width: 300px;
+    }
+
+    .botIcon {
+        height: 65px;
+        width: 65px;
+        background-color: #FDBD03;
+        border-radius: 90px;
+        margin: 0 5px 10px 5px;
+    }
+
+    .botIcon img {
+        height: 30px;
+        width: 30px;
+    }
+}

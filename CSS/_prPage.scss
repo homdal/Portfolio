@@ -1,0 +1,170 @@
+nav {
+    a {
+        text-decoration: none;
+    }
+}
+
+header {
+    @extend %header;
+
+    img {
+        width: 90px;
+        height: 90px;
+        margin: 10px;
+    }
+
+    button {
+        @extend %button;
+        margin: 0 5px 0 5px;
+    }
+}
+
+section {
+    width: 100vw;
+    height: 900px;
+    position: relative;
+
+
+    img {
+        width: 1200px;
+        height: 800px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        box-shadow: 0px 4px 5px 5px rgba(0, 0, 0, 0.1);
+    }
+
+
+}
+
+//Media---------------------------------------------------------------------------------------------------------
+@media (max-width:1200px) {
+    header {
+        div {
+            span {
+                img {
+
+                    width: 90px;
+                    height: 90px;
+                }
+            }
+        }
+    }
+
+    section {
+
+        img {
+            width: 1000px;
+            height: 700px;
+        }
+    }
+}
+
+@media (max-width:992px) {
+    header {
+        button {
+            width: 180px;
+        }
+    }
+
+    section {
+        height: 700px;
+
+        img {
+            width: 900px;
+            height: 600px;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    nav {
+        .logo {
+            img {
+                margin-right: 10px;
+            }
+
+            a {
+                h4 {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    header {
+        height: 420px;
+
+        h1 {
+            margin-top: 120px;
+        }
+
+        button {
+            width: 150px;
+        }
+
+        div {
+            height: 90px;
+        }
+    }
+
+    section {
+        height: 550px;
+
+        img {
+            width: 500px;
+            height: 400px;
+        }
+    }
+}
+
+@media (max-width:576px) {
+    nav {
+        .logo {
+            img {
+                margin-right: 10px;
+            }
+
+            a {
+                h4 {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    header {
+        height: 400px;
+
+        h1 {
+            margin-top: 110px;
+        }
+
+        button {
+            width: 150px;
+        }
+
+        div {
+            height: 80px;
+
+            span {
+                img {
+                    height: 60px;
+                    width: 60px;
+                }
+            }
+        }
+    }
+
+    section {
+        height: 450px;
+
+        img {
+            width: 95vw;
+            height: 300px;
+        }
+    }
+}

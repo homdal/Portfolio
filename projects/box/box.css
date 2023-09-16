@@ -1,0 +1,557 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Heebo:wght@400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+p {
+  font-family: Heebo;
+  direction: rtl;
+}
+
+.heading {
+  height: 600px;
+  width: 100vw;
+  background-color: #0EE1E1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.heading .Hicon {
+  width: 33vw;
+  height: 500px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+.heading .Hicon .topIcon {
+  height: 110px;
+  width: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 90px;
+  margin-left: 100px;
+}
+.heading .Hicon .topIcon img {
+  height: 70px;
+  width: 70px;
+}
+.heading .Htext {
+  width: 33vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-right: 50px;
+}
+.heading .Htext h1 {
+  color: black;
+  font-weight: 900;
+  font-size: 66px;
+  text-align: right;
+}
+.heading .Htext p {
+  color: black;
+  font-size: 20px;
+  text-align: right;
+}
+.heading .Hbox {
+  width: 33vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heading .Hbox img {
+  height: 300px;
+  width: 300px;
+}
+
+.cards {
+  height: 500px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.cards div {
+  height: 350px;
+  width: 23vw;
+  background-color: #F8F8F8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.cards div img {
+  height: 60px;
+  width: 60px;
+}
+.cards div h2 {
+  color: #0EE1E1;
+  font-weight: 800;
+  text-align: center;
+  font-size: 25px;
+  margin: 20px 0 5px 0;
+}
+.cards div p {
+  font-size: 16px;
+  text-align: center;
+  width: 300px;
+}
+
+.formap {
+  height: 800px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+.formap .frm {
+  background-color: #F0FFFF;
+  height: 900px;
+  width: 45vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.formap .frm .wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.formap .frm .wrap h1 {
+  font-weight: 900;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.formap .frm .wrap p {
+  font-size: 16px;
+  width: 450px;
+  margin-bottom: 20px;
+}
+.formap .frm .wrap form {
+  display: flex;
+  direction: rtl;
+  flex-direction: column;
+}
+.formap .frm .wrap form .fcol {
+  display: flex;
+  flex-direction: column;
+}
+.formap .frm .wrap form input {
+  background-color: #E5EEFF;
+  height: 50px;
+  width: 450px;
+  border: 0;
+  border-bottom: 5px solid #0EE1E1;
+}
+.formap .frm .wrap form textarea {
+  background-color: #E5EEFF;
+  height: 200px;
+  width: 450px;
+  border: 0;
+  border-bottom: 5px solid #0EE1E1;
+  resize: none;
+}
+.formap .frm .wrap form label {
+  font-family: Heebo;
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.formap .frm .wrap form .btn {
+  background-color: #0EE1E1;
+  font-family: Heebo;
+  font-size: 20px;
+  font-weight: 700;
+  height: 55px;
+  width: 450px;
+  border: 0;
+}
+.formap .map {
+  background-color: #0EE1E1;
+  height: 900px;
+  width: 55vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formap .map iframe {
+  height: 700px;
+  width: 45vw;
+}
+
+.bottom {
+  height: 300px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+  border-bottom: 20px solid #0EE1E1;
+}
+.bottom .botIcon {
+  height: 90px;
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0EE1E1;
+  border-radius: 90px;
+  margin: 0 20px 30px 20px;
+}
+.bottom .botIcon img {
+  height: 50px;
+  width: 50px;
+}
+
+@media (max-width: 992px) {
+  .heading {
+    height: 37vh;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+  }
+  .heading .Hicon {
+    display: none;
+  }
+  .heading .Htext {
+    height: auto;
+    width: 100vw;
+    padding: 0 100px;
+    margin-bottom: 50px;
+  }
+  .heading .Htext h1 {
+    font-size: 40px;
+    text-align: right;
+  }
+  .heading .Htext p {
+    font-size: 20px;
+    text-align: right;
+  }
+  .heading .Hbox {
+    height: 120px;
+    width: 100vw;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding: 0 100px 20px 0;
+  }
+  .heading .Hbox img {
+    height: 100px;
+    width: 100px;
+  }
+  .cards {
+    height: auto;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+  .cards div {
+    width: 60vw;
+    margin: 20px 0 0 0;
+  }
+  .cards div img {
+    height: 60px;
+    width: 60px;
+  }
+  .formap {
+    flex-direction: column;
+  }
+  .formap .frm {
+    height: auto;
+    width: 100vw;
+    padding: 50px 0 50px 0;
+  }
+  .formap .frm .wrap {
+    justify-content: center;
+  }
+  .formap .frm .wrap h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .formap .frm .wrap p {
+    font-size: 16px;
+    width: 300px;
+    margin-bottom: 10px;
+  }
+  .formap .frm .wrap form input {
+    background-color: #fff;
+    height: 45px;
+    width: 350px;
+  }
+  .formap .frm .wrap form textarea {
+    background-color: #fff;
+    height: 100px;
+    width: 350px;
+  }
+  .formap .frm .wrap form label {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .formap .frm .wrap form .btn {
+    font-size: 18px;
+    height: 45px;
+    width: 350px;
+  }
+  .formap .map {
+    width: 100vw;
+    height: 600px;
+    padding: 25px 0;
+  }
+  .formap .map iframe {
+    height: 500px;
+    width: 90vw;
+  }
+  .bottom {
+    height: 450px;
+    justify-content: center;
+    align-items: end;
+    border-bottom: 20px solid #0EE1E1;
+  }
+  .bottom .botIcon {
+    height: 70px;
+    width: 70px;
+    margin: 0 5px 10px 5px;
+  }
+  .bottom .botIcon img {
+    height: 25px;
+    width: 25px;
+  }
+}
+@media (max-width: 768px) {
+  .heading {
+    height: 37vh;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+  }
+  .heading .Hicon {
+    display: none;
+  }
+  .heading .Htext {
+    height: auto;
+    width: 100vw;
+    padding: 0 100px;
+    margin-bottom: 50px;
+  }
+  .heading .Htext h1 {
+    font-size: 40px;
+    text-align: right;
+  }
+  .heading .Htext p {
+    font-size: 20px;
+    text-align: right;
+  }
+  .heading .Hbox {
+    height: 120px;
+    width: 100vw;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding: 0 100px 20px 0;
+  }
+  .heading .Hbox img {
+    height: 100px;
+    width: 100px;
+  }
+  .cards {
+    height: auto;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+  .cards div {
+    width: 60vw;
+    margin: 20px 0 0 0;
+  }
+  .cards div img {
+    height: 60px;
+    width: 60px;
+  }
+  .formap {
+    flex-direction: column;
+  }
+  .formap .frm {
+    height: auto;
+    width: 100vw;
+    padding: 50px 0 50px 0;
+  }
+  .formap .frm .wrap {
+    justify-content: center;
+  }
+  .formap .frm .wrap h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .formap .frm .wrap p {
+    font-size: 16px;
+    width: 300px;
+    margin-bottom: 10px;
+  }
+  .formap .frm .wrap form input {
+    background-color: #fff;
+    height: 45px;
+    width: 350px;
+  }
+  .formap .frm .wrap form textarea {
+    background-color: #fff;
+    height: 100px;
+    width: 350px;
+  }
+  .formap .frm .wrap form label {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .formap .frm .wrap form .btn {
+    font-size: 18px;
+    height: 45px;
+    width: 350px;
+  }
+  .formap .map {
+    width: 100vw;
+    height: 600px;
+    padding: 25px 0;
+  }
+  .formap .map iframe {
+    height: 500px;
+    width: 90vw;
+  }
+  .bottom {
+    height: 450px;
+    justify-content: center;
+    align-items: end;
+    border-bottom: 20px solid #0EE1E1;
+  }
+  .bottom .botIcon {
+    height: 70px;
+    width: 70px;
+    margin: 0 5px 10px 5px;
+  }
+  .bottom .botIcon img {
+    height: 25px;
+    width: 25px;
+  }
+}
+@media (max-width: 576px) {
+  .heading {
+    height: 37vh;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+  }
+  .heading .Hicon {
+    display: none;
+  }
+  .heading .Htext {
+    height: auto;
+    width: 100vw;
+    padding: 0 50px;
+    margin-bottom: 50px;
+  }
+  .heading .Htext h1 {
+    font-size: 30px;
+    text-align: right;
+  }
+  .heading .Htext p {
+    font-size: 15px;
+    text-align: right;
+  }
+  .heading .Hbox {
+    height: 120px;
+    width: 100vw;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding: 0 50px 20px 0;
+  }
+  .heading .Hbox img {
+    height: 70px;
+    width: 70px;
+  }
+  .cards {
+    height: auto;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+  .cards div {
+    height: 300px;
+    width: 90vw;
+    background-color: #F8F8F8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 0 0;
+  }
+  .cards div img {
+    height: 60px;
+    width: 60px;
+  }
+  .formap {
+    flex-direction: column;
+  }
+  .formap .frm {
+    height: auto;
+    width: 100vw;
+    padding: 50px 0 50px 0;
+  }
+  .formap .frm .wrap {
+    justify-content: center;
+  }
+  .formap .frm .wrap h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .formap .frm .wrap p {
+    font-size: 16px;
+    width: 300px;
+    margin-bottom: 10px;
+  }
+  .formap .frm .wrap form input {
+    background-color: #fff;
+    height: 45px;
+    width: 300px;
+  }
+  .formap .frm .wrap form textarea {
+    background-color: #fff;
+    height: 100px;
+    width: 300px;
+  }
+  .formap .frm .wrap form label {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .formap .frm .wrap form .btn {
+    font-size: 18px;
+    height: 45px;
+    width: 300px;
+  }
+  .formap .map {
+    width: 100vw;
+    height: 400px;
+    padding: 25px 0;
+  }
+  .formap .map iframe {
+    height: 300px;
+    width: 90vw;
+  }
+  .bottom {
+    height: 250px;
+    justify-content: center;
+    align-items: end;
+    border-bottom: 20px solid #0EE1E1;
+  }
+  .bottom .botIcon {
+    height: 70px;
+    width: 70px;
+    margin: 0 5px 10px 5px;
+  }
+  .bottom .botIcon img {
+    height: 25px;
+    width: 25px;
+  }
+}/*# sourceMappingURL=box.css.map */

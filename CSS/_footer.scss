@@ -1,0 +1,31 @@
+footer {
+    width: 100vw;
+    height: auto;
+    background-color: #252835;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+
+    p {
+        margin: 10px 50px 0px 50px;
+        color: white;
+        font-weight: 600;
+
+        span {
+            margin-right: 5px;
+        }
+    }
+}
+
+
+@media (max-width:576px) {
+    footer {
+        height: 50px;
+
+        p {
+            margin: 5px 15px 0 15px;
+
+        }
+    }
+}

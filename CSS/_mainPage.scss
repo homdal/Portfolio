@@ -1,0 +1,440 @@
+header {
+    @extend %header;
+
+    img {
+        width: 70px;
+        height: 70px;
+        margin: 10px;
+    }
+}
+
+main .about {
+    width: 100vw;
+    height: 600px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        margin-bottom: 15px;
+        border: 4px dotted rgb(126, 79, 255);
+        border-radius: 50px;
+        width: 90px;
+        height: 90px;
+    }
+
+    h4 {
+        margin-bottom: 10px;
+    }
+
+    p {
+        width: 500px;
+        direction: rtl;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    button {
+        @extend %button;
+    }
+}
+
+main .gallery {
+    width: 100vw;
+    height: auto;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    flex-direction: column;
+
+    .gallery-title {
+        margin-top: 100px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            text-align: center;
+        }
+    }
+
+    .container {
+        margin-bottom: 20px;
+
+        .card {
+            width: 380px;
+            height: 500px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+
+            &:hover .card-img-top {
+                transform: translateY(-15px);
+            }
+
+            .card-img-top {
+                border-radius: 12px 12px 0 0;
+                transition: all .3s;
+            }
+
+            .card-body {
+                margin-top: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .card-text {
+                    direction: rtl;
+                    text-align: center;
+                    padding: 0 15px;
+                }
+
+                span img {
+                    width: 55px;
+                    height: 55px;
+                    margin-bottom: 5px;
+                }
+
+                button {
+                    @extend %button;
+                }
+
+
+            }
+
+        }
+    }
+
+}
+
+.contact {
+    width: 100vw;
+    height: auto;
+    background-color: #3A3A3A;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    img {
+        width: 700px;
+        height: 650px;
+    }
+
+    .form {
+        width: 300px;
+        margin: 100px 200px 100px 0px;
+        display: flex;
+        flex-direction: column;
+
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+
+            h4,
+            p {
+                color: white;
+            }
+        }
+
+        form {
+            direction: rtl;
+
+
+            label {
+                color: white;
+                font-family: Heebo;
+                font-size: 1.2em;
+                font-weight: 500;
+            }
+
+            input {
+                height: 55px;
+                width: 500px;
+                margin-bottom: 5px;
+                border: 0;
+                border-bottom: 5px solid #10e7e7;
+            }
+
+            textarea {
+                height: 120px;
+                width: 500px;
+                resize: none;
+                border: 0;
+                border-bottom: 5px solid #10e7e7;
+
+
+            }
+
+            .fbtn {
+                margin-top: 20px;
+                height: 50px;
+                width: 120px;
+                padding: 0px 5px;
+                background-color: #10e7e7;
+                color: black;
+                font-size: 1.4em;
+                font-family: Heebo;
+                font-weight: 600;
+                border-radius: 30px;
+                border: 0 solid #000;
+                transition: all .3s;
+
+                &:hover {
+                    background-color: #3affff;
+                    color: navy;
+                    transform: scale(1.1);
+                }
+            }
+
+
+        }
+    }
+
+
+}
+
+.info {
+    height: auto;
+    background-color: #1AE0EC;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+
+    span {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+// Media ------------------------------------------------------------------
+@media (max-width:1200px) {
+    main {
+
+        .about {
+            font-size: 16px;
+
+        }
+
+        .contact {
+            img {
+                width: 450px;
+                height: 450px;
+            }
+
+            .form {
+                margin-right: 100px;
+                margin-top: 100px;
+                font-size: 14px;
+
+
+                form {
+
+
+                    input {
+                        width: 350px;
+                    }
+
+                    textarea {
+                        width: 350px;
+                    }
+
+
+                }
+            }
+
+
+        }
+    }
+}
+
+@media (max-width:992px) {
+    main {
+        .about {
+            font-size: 14px;
+        }
+
+        .gallery {
+            font-size: 14px;
+
+            .container {
+                align-items: center;
+            }
+        }
+
+        .contact {
+            img {
+                width: 400px;
+                height: 350px;
+            }
+
+            .form {
+                font-size: 14px;
+                margin-right: 50px;
+                margin-top: 100px;
+
+                div {
+                    align-items: center;
+
+                }
+
+                form {
+                    input {
+                        width: 320px;
+                    }
+
+                    textarea {
+                        width: 320px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width:768px) {
+    main {
+        .about {
+            height: 500px;
+            font-size: 12px;
+        }
+
+        .gallery {
+            font-size: 12px;
+
+            .container {
+                font-size: 14px;
+                align-items: center;
+
+                .card .card-body button {
+                    width: 150px;
+                }
+            }
+        }
+
+        .contact {
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                width: 250px;
+                height: 200px;
+                margin-right: 110px;
+            }
+
+            .form {
+                font-size: 12px;
+                margin: -45px 0px 50px 0px;
+
+                div {
+                    align-items: end;
+                }
+
+                form {
+                    input {
+                        height: 40px;
+                        width: 320px;
+                    }
+
+                    textarea {
+                        width: 320px;
+                    }
+
+                    .fbtn {
+                        height: 40px;
+                    }
+                }
+            }
+        }
+
+        .info {
+            span img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    main {
+        .about {
+            font-size: 14px;
+            height: 400px;
+
+            p {
+                padding: 0px 70px 0px 70px;
+            }
+        }
+
+        .gallery {
+            font-size: 14px;
+
+            .container {
+                font-size: 14px;
+                flex-direction: column;
+                align-items: center;
+
+                .card {
+                    width: 360px;
+
+                    .card-body button {
+                        width: 150px;
+                    }
+                }
+            }
+        }
+
+        .contact {
+            flex-direction: column;
+
+            .form {
+                font-size: 12px;
+                margin: -45px 0px 50px 0px;
+
+                div {
+                    align-items: end;
+
+                }
+
+                form {
+                    input {
+                        height: 40px;
+                        width: 320px;
+                    }
+
+                    textarea {
+                        width: 320px;
+                    }
+
+                    .fbtn {
+                        height: 40px;
+                    }
+                }
+            }
+        }
+
+        .info {
+            flex-direction: column;
+
+            span img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+}
