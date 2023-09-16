@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Rubik+Mono+One&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.wrap {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    90deg,
+    rgba(213, 184, 245, 1) 0%,
+    rgba(173, 86, 169, 1) 51%,
+    rgba(150, 89, 218, 1) 100%
+  );
+}
+.positionDiv {
+  display: flex;
+  flex-direction: row;
+  background-color: red;
+  width: 100vw;
+  height: 70vh;
+}
+.settings {
+  width: 20vw;
+  background-color: rgba(213, 184, 245, 1);
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 0 20px;
+  text-align: center;
+  align-items: center;
+  font-family: "Rubik Mono One", sans-serif;
+  color: white;
+  text-shadow: 2px 2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+    -2px -2px 0 #000, 2px 0px 0 #000, 0px 2px 0 #000, -2px 0px 0 #000,
+    0px -2px 0 #000;
+}
+
+.settings input {
+  width: 60px;
+  height: 30px;
+  text-align: center;
+  font-family: "Rubik Mono One", sans-serif;
+  color: white;
+  margin: 10px 0;
+  border-radius: 20px;
+  border: 0;
+  background-color: #ffa0cb;
+  box-shadow: 0px 0px 0px 5px #de94e2, inset 0px 10px 27px -8px #ffaefc,
+    inset 0px -10px 27px -8px #a31957, 5px 5px 15px 5px rgba(255, 255, 255, 0);
+}
+.settings input:hover {
+  background-color: #ffb9d9;
+}
+.settings select {
+  height: 30px;
+  width: 200px;
+  font-family: "Rubik Mono One", sans-serif;
+  color: white;
+  text-align: center;
+  margin: 10px 0;
+  border-radius: 20px;
+  border: 0;
+  background-color: #ffa0cb;
+  box-shadow: 0px 0px 0px 5px #de94e2, inset 0px 10px 27px -8px #ffaefc,
+    inset 0px -10px 27px -8px #a31957, 5px 5px 15px 5px rgba(255, 255, 255, 0);
+  cursor: pointer;
+}
+.settings select:hover {
+  background-color: #ffb9d9;
+}
+.settings p {
+  font-size: 14px;
+  text-align: center;
+  padding: 0 20px;
+}
+.settings button {
+  height: 40px;
+  width: 100px;
+  font-family: "Rubik Mono One", sans-serif;
+  color: white;
+  border-radius: 20px;
+  margin: 10px 0;
+  border: 0;
+  background-color: #e43986;
+  box-shadow: 0px 0px 0px 5px #de94e2, inset 0px 10px 27px -8px #ffaefc,
+    inset 0px -10px 27px -8px #a31957, 5px 5px 15px 5px rgba(255, 255, 255, 0);
+}
+.settings button:hover {
+  background-color: #f94b9a;
+  box-shadow: 0px 0px 0px 5px #de94e2, inset 0px 10px 27px -8px #ffaefc,
+    inset 0px -10px 27px -8px #d82a78, 5px 5px 15px 5px rgba(255, 255, 255, 0);
+  cursor: pointer;
+}
+.inputPosition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.que {
+  width: 80vw;
+  background: linear-gradient(
+    90deg,
+    rgba(213, 184, 245, 1) 0%,
+    rgba(173, 86, 169, 1) 51%,
+    rgba(150, 89, 218, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.que p {
+  font-family: "Luckiest Guy", cursive;
+  color: white;
+  text-shadow: 2px 2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+    -2px -2px 0 #000, 2px 0px 0 #000, 0px 2px 0 #000, -2px 0px 0 #000,
+    0px -2px 0 #000;
+  font-size: 50px;
+  text-align: center;
+  padding: 100px;
+}
+.lowerDiv {
+  background-color: rgb(155, 84, 190);
+  box-shadow: inset -1px 3px 8px 5px #b011cc, 2px 5px 16px 0px #3a0b5e,
+    -23px 24px 37px -13px rgba(0, 0, 0, 0);
+  height: 30vh;
+  border: 5px solid purple;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ans {
+  height: auto;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+.btnDiv1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.btnDiv2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.ans button {
+  height: 90px;
+  width: 100%;
+  margin: 10px;
+  font-size: 20px;
+  font-family: "Luckiest Guy", cursive;
+  background-color: blueviolet;
+  border: 0;
+  border-radius: 20px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+    -2px -2px 0 #000, 2px 0px 0 #000, 0px 2px 0 #000, -2px 0px 0 #000,
+    0px -2px 0 #000;
+  box-shadow: 0px 0px 0px 5px #7b2ba8, inset 0px 10px 27px -8px #141414,
+    inset 0px -10px 27px -8px #a31957, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+.ans button:hover {
+  background-color: rgb(147, 64, 225);
+  box-shadow: 0px 0px 0px 5px #9540c6, inset 0px 10px 27px -8px #363536,
+    inset 0px -10px 27px -8px #c93176, 5px 5px 15px 5px rgba(43, 43, 43, 0);
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .positionDiv {
+    flex-direction: column;
+    height: auto;
+  }
+  .settings {
+    width: 100vw;
+    flex-direction: column;
+    background: linear-gradient(
+      90deg,
+      rgba(213, 184, 245, 1) 0%,
+      rgba(173, 86, 169, 1) 51%,
+      rgba(150, 89, 218, 1) 100%
+    );
+    padding: 20px 0;
+    font-size: 12px;
+  }
+  .inputPosition {
+    width: 300px;
+    flex-direction: row;
+    text-align: left;
+  }
+  .settings label {
+    padding: 0 10px;
+  }
+  .settings input {
+    margin-right: 0;
+  }
+  .settings select {
+    width: 120px;
+    margin-right: 0;
+  }
+  .settings button {
+    font-size: 12px;
+  }
+
+  .settings p {
+    font-size: 12px;
+  }
+  .que {
+    width: 100vw;
+    height: 40vh;
+  }
+}
+@media (max-width: 576px) {
+  .wrap {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(
+      90deg,
+      rgba(213, 184, 245, 1) 0%,
+      rgba(173, 86, 169, 1) 51%,
+      rgba(150, 89, 218, 1) 100%
+    );
+  }
+  .que {
+    height: 200px;
+  }
+  .que p {
+    font-size: 20px;
+    height: 100px;
+    padding: 0 10px;
+  }
+  .ans {
+    width: 100vw;
+  }
+  .lowerDiv {
+    height: 250px;
+  }
+  .lowerDiv button {
+    height: 100px;
+    width: 140px;
+    font-size: 14px;
+    padding: 0 10px;
+  }
+}

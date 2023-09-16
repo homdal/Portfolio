@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+div,
+button,
+input {
+  font-family: "Caveat", cursive;
+  font-size: 25px;
+}
+
+.search {
+  height: 20vh;
+  width: 100vw;
+  background-color: pink;
+  border: 10px double rgb(239, 111, 132);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.search input {
+  border: 2px solid rgb(239, 111, 132);
+  border-radius: 10px;
+}
+
+.search h1 {
+  height: auto;
+  width: 300px;
+  font-size: 25px;
+}
+.searchBar {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0 0 0;
+}
+
+#searchForm button {
+  width: 90px;
+  border: 0px;
+  background-color: rgb(255, 213, 201);
+  border-radius: 10px;
+  border: 3px groove rgb(255, 102, 127);
+}
+#searchForm button:hover {
+  background-color: rgb(255, 226, 218);
+  border: 3px double rgb(255, 51, 85);
+  cursor: pointer;
+}
+#warning {
+  height: 130px;
+  width: 350px;
+  text-align: center;
+  color: rgb(211, 21, 21);
+  margin-top: 5px;
+}
+.arrowDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: purple;
+  padding-top: 10px;
+}
+.arrowDiv:hover {
+  border-bottom: 3px dashed rgb(207, 24, 207);
+  border-top: 3px dashed rgb(207, 24, 207);
+}
+.arrow {
+  height: 30px;
+  width: 150px;
+}
+.flip {
+  transform: rotateY(180deg);
+}
+.main {
+  height: 80vh;
+  width: 100vw;
+  background-image: url("images/note.jpg");
+  background-size: 100vw 100vh;
+  background-position: -150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  padding-top: 150px;
+}
+.mainRow {
+  height: 500px;
+  width: 900px;
+  display: flex;
+  flex-direction: row;
+}
+.info {
+  width: 600px;
+  height: 630px;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: pink rgb(241, 145, 161);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 5px 0 0 20px;
+}
+.info span {
+  color: purple;
+}
+.entry {
+  width: 450px;
+  margin-top: 20px;
+}
+.evoDiv {
+  height: 300px;
+  width: 500px;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: pink rgb(241, 145, 161);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.evoDiv h1 {
+  font-size: 45px;
+}
+#evo {
+  padding: 40px 10px 0 0;
+}
+#evo div {
+  margin-bottom: 65px;
+}
+#evo span {
+  color: purple;
+}
+.evoCol {
+  display: flex;
+  flex-direction: column;
+}
+.evoCol img {
+  height: 100px;
+  width: 100px;
+}
+.evoRow {
+  display: flex;
+  flex-direction: row;
+}
+.nameImgCry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: auto;
+  margin-right: 100px;
+  margin-left: 50px;
+}
+.nameImgCry .name {
+  color: black;
+}
+.nameImgCry img {
+  width: 300px;
+  height: 300px;
+}
+.nameImgCry .cry button {
+  width: 100px;
+  height: 30px;
+  border: 0px;
+  background-color: rgb(255, 213, 201);
+  border-radius: 10px;
+  border: 3px groove rgb(255, 102, 127);
+  margin-top: 10px;
+  line-height: 0;
+}
+.nameImgCry .cry button:hover {
+  background-color: rgb(255, 226, 218);
+  border: 3px double rgb(255, 51, 85);
+  cursor: pointer;
+}
+.hide {
+  display: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
+#gen {
+  font-family: "Caveat", cursive;
+  font-size: 20px;
+  background-color: rgb(255, 227, 232);
+  padding: 0 0 0 15px;
+}
+.arrowMobile {
+  display: none;
+}
+@media (max-width: 1900px) {
+  .info {
+    width: auto;
+  }
+  .evoDiv {
+    width: auto;
+  }
+  .nameImgCry {
+    width: auto;
+  }
+  .main {
+    background-position: -200px;
+    padding-left: 50px;
+  }
+}
+@media (max-width: 1400px) {
+  .search {
+    border: 10px double rgb(239, 111, 132);
+  }
+  .searchBar {
+    padding: 50px 0 0 0;
+  }
+  #warning {
+    width: 400px;
+    font-size: 21px;
+  }
+  .main {
+    justify-content: center;
+  }
+  .arrowDiv {
+    font-size: 25px;
+  }
+  .arrow {
+    height: 20px;
+    width: 100px;
+  }
+}
+@media (max-width: 1300px) {
+  .main {
+    background-image: url("images/note2.png");
+  }
+  .nameImgCry {
+    margin: 0;
+  }
+  .info {
+    padding: 0;
+  }
+  .entry {
+    width: 400px;
+  }
+}
+@media (max-width: 950px) {
+  .main {
+    flex-direction: column-reverse;
+    justify-content: start;
+    align-items: center;
+    padding-top: 0px;
+  }
+  .mainRow {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .searchBar {
+    padding: 70px 0 0 0;
+  }
+
+  .info {
+    width: 100vw;
+    height: 400px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 70px;
+  }
+
+  .genCol {
+    height: 400px;
+    overflow: auto;
+  }
+  .nameImgCry {
+    height: 300px;
+  }
+  .nameImgCry img {
+    height: 250px;
+    width: 250px;
+  }
+  .nameImgCry .cry button {
+    margin: 0;
+  }
+  .evoDiv {
+    height: 300px;
+  }
+}
+@media (max-width: 576px) {
+  .search {
+    height: 250px;
+    flex-direction: column;
+    border: 10px double rgb(239, 111, 132);
+    justify-content: start;
+    padding-top: 5px;
+  }
+  .searchBar {
+    padding: 0;
+  }
+  #warning {
+    height: 60px;
+    width: 370px;
+    margin-bottom: 60px;
+  }
+  .arrowDiv {
+    display: none;
+  }
+  .arrowMobile {
+    height: 50px;
+    width: 100vw;
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .arrowMob {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: purple;
+    font-size: 16px;
+    padding-top: 5px;
+  }
+  .arrowMob:hover {
+    border-bottom: 3px dashed rgb(207, 24, 207);
+    border-top: 3px dashed rgb(207, 24, 207);
+  }
+  .arrow {
+    height: 10px;
+    width: 60px;
+  }
+
+  .main {
+    height: auto;
+    align-items: end;
+  }
+  .mainRow {
+    flex-direction: column;
+  }
+  .nameImgCry {
+    margin-bottom: 70px;
+  }
+  .evoDiv {
+    height: 200px;
+    width: 370px;
+    margin-bottom: 10px;
+  }
+  .info {
+    width: 100vw;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  .infoCol {
+    margin-bottom: 10px;
+  }
+  .entry {
+    width: 340px;
+    padding: 0 20px;
+  }
+}

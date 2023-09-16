@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XO</title>
+    <link rel="stylesheet" href="XO.css" />
+  </head>
+  <body>
+    <div class="positionDiv">
+      <h1 id="whosTurn">X Goes Now!</h1>
+      <div class="gameBoard" id="gameDiv">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <div class="toolsDiv">
+      <div class="wrap">
+        <div class="scoreBoard" id="scoreBoard">
+          <h1>Score Board:</h1>
+          <div class="whoScore">
+            <div>X</div>
+            <div>O</div>
+          </div>
+          <div class="whatScore">
+            <div id="xScore"></div>
+            <div id="oScore"></div>
+          </div>
+        </div>
+        <div id="btnDiv" class="btnDiv">
+          <button id="playAgainBtn">Play Again!</button>
+          <button id="reset">Reset Score</button>
+        </div>
+        <div class="sliderDiv">
+          <img src="images/speaker.png" alt="speaker" id="speakerImg" />
+          <input
+            type="range"
+            min="0"
+            max="10"
+            value="2"
+            class="slider"
+            id="volume"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script src="XO.js"></script>
+  </body>
+</html>

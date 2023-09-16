@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Dancing Script", cursive;
+}
+.wholePage {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(store.jpg);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.positionDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  height: 90vh;
+  width: 60vw;
+  background-color: rgb(255, 255, 255, 0.5);
+}
+
+.formBox {
+  text-align: center;
+}
+label {
+  font-size: 20px;
+  text-decoration: underline;
+}
+input {
+  padding-left: 5px;
+  font-size: 20px;
+}
+.empty {
+  border: 2px solid red;
+}
+#quantity {
+  width: 100px;
+}
+.formBox h1 {
+  font-weight: 700;
+  text-decoration: underline;
+}
+.formBox button {
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+  height: 50px;
+  padding: 0 20px;
+  border: 2px solid rgb(110, 212, 210);
+  border-radius: 10px;
+  background-color: rgb(66, 187, 214);
+}
+.item div {
+  background-color: rgb(110, 212, 210);
+  border: 2px dotted white;
+  text-align: center;
+  width: 400px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.item button {
+  color: rgb(184, 39, 39);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  font-weight: 800;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid rgb(187, 181, 181);
+  cursor: pointer;
+}
+.item button:hover {
+  color: rgb(255, 0, 0);
+  border: 2px solid rgb(206, 48, 48);
+  transform: scale(1.2);
+}
+.cartBox {
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  height: 90%;
+  width: 100%;
+  padding-top: 50px;
+  border-radius: 0 0 10px 10px;
+  background: radial-gradient(
+    circle,
+    rgba(63, 175, 160, 0.5) 0%,
+    rgba(212, 167, 100, 0.5) 100%
+  );
+}
+
+@media (max-width: 1200px) {
+  .formDirection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  button {
+    width: 100px;
+  }
+  #quantity {
+    margin-bottom: 10px;
+  }
+  .item {
+    width: 380px;
+  }
+  .item div {
+    width: 250px;
+  }
+}
+@media (max-width: 790px) {
+  .item {
+    width: 300px;
+  }
+  .item div {
+    width: 200px;
+  }
+}
+@media (max-width: 576px) {
+  .positionDiv {
+    width: 95vw;
+  }
+  .cartBox {
+    padding: 20px 20px 0 0;
+  }
+  .item {
+    width: 250px;
+  }
+  .item div {
+    width: 150px;
+  }
+}

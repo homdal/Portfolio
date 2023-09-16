@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trivia</title>
+    <link rel="stylesheet" href="trivia.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="positionDiv">
+        <div class="settings">
+          <div class="inputPosition">
+            <label for="numberOfQue">Choose Number of Questions:</label>
+            <input type="number" id="queNum" min="1" max="10" />
+          </div>
+          <div class="inputPosition">
+            <label for="numberOfQue">Choose Category:</label>
+            <select id="category" name="category">
+              <option value="27" id="op1">Animals</option>
+              <option value="20" id="op2">Mythology</option>
+              <option value="21" id="op3">Sports</option>
+              <option value="22" id="op4">Geography</option>
+              <option value="18" id="op5">Computer Science</option>
+            </select>
+          </div>
+          <div class="inputPosition">
+            <label for="numberOfQue">Choose Difficulty:</label>
+            <select id="difficulty" name="difficulty">
+              <option value="easy" id="op1">Easy</option>
+              <option value="medium" id="op2">Medium</option>
+              <option value="hard" id="op3">Hard</option>
+            </select>
+          </div>
+          <div class="submitButtonDiv">
+            <button id="submit">submit</button>
+            <p>Each correct answer is worth 10 points</p>
+          </div>
+        </div>
+
+        <div class="que">
+          <p id="question">Choose from the options then submit to start.</p>
+        </div>
+      </div>
+      <div class="lowerDiv">
+        <div class="ans">
+          <div class="btnDiv1">
+            <button id="answr1" class="answer"></button>
+            <button id="answr2" class="answer"></button>
+          </div>
+          <div class="btnDiv2">
+            <button id="answr3" class="answer"></button>
+            <button id="answr4" class="answer"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="trivia.js"></script>
+  </body>
+</html>

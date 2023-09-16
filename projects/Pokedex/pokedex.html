@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="pokedex.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="search">
+      <div class="arrowDiv pointer" id="previous1">
+        <img src="./images/arrow.png" alt="" class="arrow flip pointer" />
+        <h2>Previous</h2>
+      </div>
+      <div class="searchBar">
+        <form id="searchForm">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Enter a name or dex number"
+          />
+          <button id="searchButton">Search</button>
+        </form>
+        <div id="warning"></div>
+        <div class="arrowMobile">
+          <div class="arrowMob pointer" id="previous2">
+            <img src="./images/arrow.png" alt="" class="arrow flip pointer" />
+            <h2>Previous</h2>
+          </div>
+          <div class="arrowMob pointer" id="next2">
+            <img src="./images/arrow.png" alt="" class="arrow" />
+            <h2>Next</h2>
+          </div>
+        </div>
+      </div>
+      <div class="arrowDiv pointer" id="next1">
+        <img src="./images/arrow.png" alt="" class="arrow" />
+        <h2>Next</h2>
+      </div>
+    </div>
+    <div class="main">
+      <div class="info" id="info">
+        <div class="infoCol">
+          <div id="pokeId"></div>
+          <div id="type"></div>
+          <div id="color"></div>
+          <div id="shape"></div>
+          <div id="happy"></div>
+          <div id="capRate"></div>
+          <div id="egg"></div>
+        </div>
+        <br />
+        <div class="genCol">
+          <div id="selectGen">
+            <label for="Entry Generation"
+              ><u>Choose Entry generation:</u></label
+            >
+            <select id="gen" name="gen">
+              <option value="1" id="op1">First</option>
+              <option value="2" id="op2">Second</option>
+              <option value="3" id="op3">Third</option>
+              <option value="4" id="op4">Fourth</option>
+              <option value="5" id="op5">Fifth</option>
+              <option value="6" id="op6">Sixth</option>
+              <option value="7" id="op7">Seventh</option>
+              <option value="8" id="op8">Eighth</option>
+            </select>
+          </div>
+          <div id="entry"></div>
+        </div>
+      </div>
+      <div class="mainRow">
+        <div class="nameImgCry">
+          <h1 class="name" id="name">Name</h1>
+          <img id="pokeImage" src="" alt="" />
+          <div class="cry">
+            <button id="cryButton">Cry</button>
+          </div>
+        </div>
+        <div class="evoDiv">
+          <h1>evolutions:</h1>
+          <div class="evoRow">
+            <div id="evo"></div>
+            <div class="evoCol" id="evoImgDiv"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="pokedex.js"></script>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "EB Garamond", serif;
+}
+.wholePage {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: lightskyblue;
+}
+.pageRow {
+  display: flex;
+  flex-direction: row;
+}
+.pageDiv {
+  background-color: white;
+  height: 100vh;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.formDiv {
+  background-image: url(paint.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30vw;
+  border: 7px solid darkblue;
+  display: flex;
+  justify-content: center;
+}
+.form1 {
+  width: 80%;
+  height: 70%;
+  padding: 20px;
+}
+label {
+  color: white;
+  font-size: 18px;
+  font-weight: 900;
+  text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+}
+.borderDiv {
+  display: flex;
+  align-items: end;
+}
+.btnDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.btnDiv button {
+  width: 90px;
+  height: 90px;
+  border-radius: 80px;
+}
+#submitBtn {
+  border: 5px double blue;
+  font-weight: 800;
+}
+#saveBtn {
+  border: 5px double rgb(28, 163, 28);
+}
+#clearBtn {
+  border: 5px double rgb(250, 226, 6);
+  color: white;
+}
+#clearBtn:hover {
+  background-color: rgb(221, 165, 11);
+}
+#deleteBtn {
+  border: 5px double rgb(154, 17, 17);
+}
+@media (max-width: 900px) {
+  .wholePage {
+    overflow: scroll;
+  }
+  .pageDiv {
+    height: unset;
+  }
+}
+@media (max-width: 576px) {
+  .pageRow {
+    flex-direction: column-reverse;
+  }
+  .pageDiv {
+    width: 100vw;
+  }
+  .formDiv {
+    width: 100vw;
+  }
+}

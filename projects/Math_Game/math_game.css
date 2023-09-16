@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+div {
+  font-family: "Black Ops One", cursive;
+}
+.mainDiv {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(numbers.jpg);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form1 {
+  z-index: 1;
+  background-color: rgb(21, 18, 78);
+  box-shadow: 10px 9px 146px 30px rgba(0, 0, 0, 0.75) inset;
+  border-radius: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 600px;
+  position: absolute;
+}
+.form1 h1 {
+  color: #2d186e;
+  text-shadow: 0 0 5px #ad92ff, 0 0 10px #ad92ff, 0 0 15px #ad92ff,
+    0 0 20px #4000ff, 0 0 30px #4000ff, 0 0 40px #4000ff, 0 0 55px #4000ff,
+    0 0 75px #4000ff;
+  text-align: center;
+  text-decoration: underline;
+  font-weight: 600;
+}
+.form1 label {
+  font-size: 25px;
+  color: #2d186e;
+  text-shadow: 0 0 5px #ad92ff, 0 0 10px #ad92ff, 0 0 15px #ad92ff,
+    0 0 20px #4000ff, 0 0 30px #4000ff, 0 0 40px #4000ff, 0 0 55px #4000ff,
+    0 0 75px #4000ff;
+}
+.From {
+  background-color: #7b65be;
+  box-shadow: -2px -1px 36px 4px rgba(0, 0, 0, 0.75) inset;
+  width: 200px;
+  font-size: 20px;
+  border: 0;
+  appearance: textfield;
+}
+.To {
+  background-color: #7b65be;
+  box-shadow: -2px -1px 36px 4px rgba(0, 0, 0, 0.75) inset;
+  width: 200px;
+  font-size: 20px;
+  border: 0;
+  appearance: textfield;
+}
+.Answer {
+  background-color: #7b65be;
+  box-shadow: -2px -1px 36px 4px rgba(0, 0, 0, 0.75) inset;
+  font-size: 20px;
+  border: 0;
+}
+.form1 input:focus {
+  background-color: #6e5ca5;
+}
+#answer {
+  width: 240px;
+}
+.btnDiv {
+  margin-top: 20px;
+  height: 110px;
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#anBtn {
+  background-color: #280a74;
+  color: rgb(18, 29, 85);
+  box-shadow: 2px 5px 70px -2px rgba(0, 0, 0, 0.75) inset;
+  text-shadow: 0 0 5px #616eff, 0 0 10px #616eff, 0 0 15px #616eff,
+    0 0 20px #00c3ff, 0 0 30px #00c3ff, 0 0 40px #00c3ff, 0 0 55px #00c3ff,
+    0 0 75px #00c3ff;
+  border: 0;
+  border-radius: 70px;
+  font-size: 20px;
+  width: 100px;
+  height: 100px;
+}
+#anBtn:hover {
+  background-color: #616eff;
+}
+#newBtn {
+  background-color: #280a74;
+  color: rgb(66, 18, 85);
+  box-shadow: 2px 5px 70px -2px rgba(0, 0, 0, 0.75) inset;
+  text-shadow: 0 0 5px #a561ff, 0 0 10px #a561ff, 0 0 15px #a561ff,
+    0 0 20px #ca61ff, 0 0 30px #ca61ff, 0 0 40px #ca61ff, 0 0 55px #ca61ff,
+    0 0 75px #ca61ff;
+  border: 0;
+  border-radius: 70px;
+  font-size: 20px;
+  width: 100px;
+  height: 100px;
+}
+#newBtn:hover {
+  background-color: #ca61ff;
+}
+#num1 {
+  width: 150px;
+}
+#num2 {
+  width: 150px;
+}
+.correct {
+  background-color: lime;
+  border: 1px solid lime;
+}
+.wrong {
+  background-color: red;
+  border: 1px solid red;
+}
+.solved {
+  background-color: rgb(24, 1, 82);
+  box-shadow: 10px 9px 146px 30px rgba(0, 0, 0, 0.75) inset;
+  border-radius: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 60px 0 100px 200px;
+  width: 600px;
+  height: 500px;
+  margin-left: 600px;
+  font-size: 20px;
+  color: #2d186e;
+  text-shadow: 0 0 5px #92ffd5, 0 0 10px #92ffd5;
+}
+#list {
+  height: 380px;
+  width: 220px;
+  overflow: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #19073f #0f0027;
+}
+@media (max-width: 1000px) {
+  .mainDiv {
+    height: 100vh;
+    background-size: 100vw 100vh;
+    align-items: flex-start;
+  }
+  .form1 {
+    height: 400px;
+    width: 400px;
+  }
+  .form1 h1 {
+    font-size: 30px;
+    margin: 30px 0 20px 0;
+  }
+  .form1 label {
+    font-size: 20px;
+  }
+  .fromCol {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .toCol {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .From {
+    height: 40px;
+  }
+  .To {
+    height: 40px;
+  }
+  #answer {
+    width: 180px;
+  }
+  .btnDiv {
+    height: 90px;
+    width: 200px;
+  }
+  #anBtn {
+    height: 90px;
+    width: 90px;
+    font-size: 18px;
+  }
+  #newBtn {
+    height: 90px;
+    width: 90px;
+    font-size: 18px;
+  }
+  .solved {
+    height: 400px;
+    width: 400px;
+    margin: 380px 0 0 0;
+    padding: 50px 0 0 0;
+    font-size: 18px;
+  }
+  #list {
+    height: 300px;
+  }
+  .inputsDiv {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .mainDiv {
+    align-items: flex-start;
+  }
+  .form1 {
+    height: 350px;
+    width: 350px;
+  }
+  .solved {
+    height: 350px;
+    width: 350px;
+    margin: 310px 0 0 0;
+    padding: 50px 0 0 0;
+  }
+  #list {
+    height: 250px;
+  }
+}

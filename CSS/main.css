@@ -370,10 +370,14 @@ main .gallery .container .card .card-body span img {
   height: 55px;
   margin-bottom: 5px;
 }
+main .playground {
+  background-color: #d1f1ff;
+}
+
 .contact {
   width: 100vw;
   height: auto;
-  background-color: #3A3A3A;
+  background-color: #3a3a3a;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -442,7 +446,7 @@ main .gallery .container .card .card-body span img {
 
 .info {
   height: auto;
-  background-color: #1AE0EC;
+  background-color: #1ae0ec;
   display: flex;
   flex-direction: row;
   justify-content: center;
