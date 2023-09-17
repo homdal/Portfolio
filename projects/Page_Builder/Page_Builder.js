@@ -50,17 +50,18 @@ const createElm = (
 };
 
 const clearPage = () => {
+  //clear all tags
   let pageDiv = document.querySelector("#pageDiv");
-  pageDiv.innerHTML = ""; //clear all tags
+  pageDiv.innerHTML = "";
 };
 
 const restorePage = () => {
-  elmsArr = []; // clear the array
+  //restore page from local storage
+  elmsArr = [];
   let newElmsArr = [];
-  let jsonStr = localStorage.getItem("tags"); // get string json from localStorage
-  newElmsArr = JSON.parse(jsonStr); //convert from json to array
+  let jsonStr = localStorage.getItem("tags");
+  newElmsArr = JSON.parse(jsonStr);
   if (newElmsArr) {
-    //check if empty
     for (let item of newElmsArr) {
       createElm(
         item.tagName,

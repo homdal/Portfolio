@@ -3,7 +3,7 @@
 
 mainPage - דף ראשי \ דף תיק העבודות, יש לפתוח אותו ראשון
 
-projectPage1-6 - דפי הצגת הפרויקטים
+projectPage1-12 - דפי הצגת הפרויקטים
 
 CSS      -  תיקייה המכילה את כל קבצי העיצוב של הדף הראשי ודפי הצגת הפרויקטים בלבד
 
@@ -14,13 +14,21 @@ projects - מכילה את תיקיות וקבצי הפרויקטים
 resume   - מכילה את קובץ קורות החיים
 
 
-שם הפרויקט     שם תיקיית הפרויקט    שם דף הצגת הפרויקט
-projectPage1 -  here&now  - פרויקט כאן ועכשיו
-projectPage2 -  coffee    - פרויקט קפה טוב
-projectPage3 -  forward   - פרויקט קדימה
-projectPage4 -  world     - פרויקט לגלות עולם
-projectPage5 -  advice    - פרויקט ייעוץ
-projectPage6 -  box       - פרויקט קופסא
+שם הפרויקט                שם תיקיית הפרויקט        שם דף הצגת הפרויקט
+projectPage1  -  here&now      - פרויקט כאן ועכשיו
+projectPage2  -  coffee        - פרויקט קפה טוב
+projectPage3  -  forward       - פרויקט קדימה
+projectPage4  -  world         - פרויקט לגלות עולם
+projectPage5  -  advice        - פרויקט ייעוץ
+projectPage6  -  box           - פרויקט קופסא
+projectPage7  -  shopping list - פרויקט רשימת קניות
+projectPage8  -  math game     - פרויקט לומדת מתמטיקה
+projectPage9  -  page builder  - פרויקט בונה אתר
+projectPage10 -  XO            - פרויקט איקס עיגול
+projectPage11 -  trivia        - פרויקט טריוויה
+projectPage12 -  pokedex       - פרויקט פוקידקס
+
+ (HTML, CSS, SASS, PNG\SVG, JS, RAR) כל תיקיית פרויקט מכילה את הקבצים ששייכים לפרויקט
 
 
- (HTML, CSS, SASS, PNG\SVG, RAR) כל תיקיית פרויקט מכילה את הקבצים ששייכים לפרויקט
+

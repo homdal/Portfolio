@@ -15,7 +15,7 @@ p {
 .heading {
   height: 600px;
   width: 100vw;
-  background-color: #0EE1E1;
+  background-color: #0ee1e1;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -82,7 +82,7 @@ p {
 .cards div {
   height: 350px;
   width: 23vw;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -94,7 +94,7 @@ p {
   width: 60px;
 }
 .cards div h2 {
-  color: #0EE1E1;
+  color: #0ee1e1;
   font-weight: 800;
   text-align: center;
   font-size: 25px;
@@ -113,7 +113,7 @@ p {
   flex-direction: row;
 }
 .formap .frm {
-  background-color: #F0FFFF;
+  background-color: #f0ffff;
   height: 900px;
   width: 45vw;
   display: flex;
@@ -146,18 +146,18 @@ p {
   flex-direction: column;
 }
 .formap .frm .wrap form input {
-  background-color: #E5EEFF;
+  background-color: #e5eeff;
   height: 50px;
   width: 450px;
   border: 0;
-  border-bottom: 5px solid #0EE1E1;
+  border-bottom: 5px solid #0ee1e1;
 }
 .formap .frm .wrap form textarea {
-  background-color: #E5EEFF;
+  background-color: #e5eeff;
   height: 200px;
   width: 450px;
   border: 0;
-  border-bottom: 5px solid #0EE1E1;
+  border-bottom: 5px solid #0ee1e1;
   resize: none;
 }
 .formap .frm .wrap form label {
@@ -168,7 +168,7 @@ p {
   margin-top: 10px;
 }
 .formap .frm .wrap form .btn {
-  background-color: #0EE1E1;
+  background-color: #0ee1e1;
   font-family: Heebo;
   font-size: 20px;
   font-weight: 700;
@@ -176,8 +176,12 @@ p {
   width: 450px;
   border: 0;
 }
+.formap .frm .wrap form .btn:hover {
+  background-color: #21ffff;
+  cursor: pointer;
+}
 .formap .map {
-  background-color: #0EE1E1;
+  background-color: #0ee1e1;
   height: 900px;
   width: 55vw;
   display: flex;
@@ -196,7 +200,7 @@ p {
   flex-direction: row;
   justify-content: center;
   align-items: end;
-  border-bottom: 20px solid #0EE1E1;
+  border-bottom: 20px solid #0ee1e1;
 }
 .bottom .botIcon {
   height: 90px;
@@ -204,7 +208,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #0EE1E1;
+  background-color: #0ee1e1;
   border-radius: 90px;
   margin: 0 20px 30px 20px;
 }
@@ -313,7 +317,7 @@ p {
     height: 450px;
     justify-content: center;
     align-items: end;
-    border-bottom: 20px solid #0EE1E1;
+    border-bottom: 20px solid #0ee1e1;
   }
   .bottom .botIcon {
     height: 70px;
@@ -425,7 +429,7 @@ p {
     height: 450px;
     justify-content: center;
     align-items: end;
-    border-bottom: 20px solid #0EE1E1;
+    border-bottom: 20px solid #0ee1e1;
   }
   .bottom .botIcon {
     height: 70px;
@@ -466,7 +470,7 @@ p {
     display: flex;
     justify-content: end;
     align-items: end;
-    padding: 0 50px 20px 0;
+    padding: 30px 50px 20px 0;
   }
   .heading .Hbox img {
     height: 70px;
@@ -480,7 +484,7 @@ p {
   .cards div {
     height: 300px;
     width: 90vw;
-    background-color: #F8F8F8;
+    background-color: #f8f8f8;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -543,7 +547,7 @@ p {
     height: 250px;
     justify-content: center;
     align-items: end;
-    border-bottom: 20px solid #0EE1E1;
+    border-bottom: 20px solid #0ee1e1;
   }
   .bottom .botIcon {
     height: 70px;

@@ -148,6 +148,7 @@ header div {
     margin-top: 100px;
   }
   header p {
+    width: 370px;
     padding: 0px 20px 0px 20px;
   }
   header div {
@@ -156,8 +157,8 @@ header div {
   }
   header div span img {
     margin: 5px;
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
   }
 }
 nav {
@@ -566,7 +567,9 @@ main .playground {
     height: 400px;
   }
   main .about p {
-    padding: 0px 70px 0px 70px;
+    width: 370px;
+    padding: 0 30px;
+    margin: 0;
   }
   main .gallery {
     font-size: 14px;
@@ -577,7 +580,7 @@ main .playground {
     align-items: center;
   }
   main .gallery .container .card {
-    width: 360px;
+    width: 95vw;
   }
   main .gallery .container .card .card-body button {
     width: 150px;
@@ -629,9 +632,6 @@ footer p span {
 }
 
 @media (max-width: 576px) {
-  footer {
-    height: 50px;
-  }
   footer p {
     margin: 5px 15px 0 15px;
   }

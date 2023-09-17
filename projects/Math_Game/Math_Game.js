@@ -8,29 +8,6 @@ const getRandomIntInclusive = (min, max) => {
 let correctAnswer; //stores the correct answer of each equation to then compare to the user answer
 let save = []; //stores correctly answered equations to save them into local storage
 
-window.addEventListener("load", () => {
-  document.querySelector("#form1").addEventListener("submit", (e) => {
-    e.preventDefault();
-  });
-  let answer = document.querySelector("#answer");
-  let from = document.querySelector("#from");
-  let to = document.querySelector("#to");
-  answer.value = "";
-  from.value = 1;
-  to.value = 10;
-  equation(from.value, to.value);
-  restoreSave();
-  document.querySelector("#anBtn").addEventListener("click", () => {
-    let { value: userAnswer } = document.querySelector("#answer");
-    if (userAnswer) {
-      checkAnswer(userAnswer);
-    }
-  });
-  document.querySelector("#newBtn").addEventListener("click", () => {
-    anew();
-  });
-});
-
 const anew = () => {
   //clear the input and remove classes before getting new equation
   document.querySelector("#answer").classList.remove("correct");
@@ -95,6 +72,7 @@ const addToList = (equation) => {
   let jsonStr = JSON.stringify(save);
   localStorage.setItem("solved", jsonStr);
 };
+
 const restoreSave = () => {
   //restores save from local storage
   save = [];
@@ -107,3 +85,26 @@ const restoreSave = () => {
     }
   }
 };
+
+window.addEventListener("load", () => {
+  document.querySelector("#form1").addEventListener("submit", (e) => {
+    e.preventDefault();
+  });
+  let answer = document.querySelector("#answer");
+  let from = document.querySelector("#from");
+  let to = document.querySelector("#to");
+  answer.value = "";
+  from.value = 1;
+  to.value = 10;
+  equation(from.value, to.value);
+  restoreSave();
+  document.querySelector("#anBtn").addEventListener("click", () => {
+    let { value: userAnswer } = document.querySelector("#answer");
+    if (userAnswer) {
+      checkAnswer(userAnswer);
+    }
+  });
+  document.querySelector("#newBtn").addEventListener("click", () => {
+    anew();
+  });
+});
