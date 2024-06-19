@@ -102,6 +102,11 @@ header div {
   justify-content: center;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
 }
+header .list-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 
 @media (max-width: 1200px) {
   header {
@@ -218,6 +223,39 @@ nav ul a:hover {
   color: rgb(16, 224, 224);
 }
 
+@media (max-width: 992px) {
+  nav {
+    justify-content: space-between;
+  }
+  nav ul {
+    display: none;
+    background-color: white;
+    padding: 2px 0 0 0;
+    position: absolute;
+    top: 55px;
+    right: 0;
+  }
+  nav ul a {
+    padding: 0 10px 0 10px;
+    border: 1px solid rgb(16, 224, 224);
+  }
+  nav ul:hover {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-2px);
+  }
+  nav .mob {
+    display: block;
+  }
+  nav .mob:hover + ul {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-2px);
+  }
+  nav .logo img {
+    margin: 0 0 5px 30px;
+  }
+}
 @media (max-width: 768px) {
   nav {
     justify-content: space-between;
@@ -371,8 +409,18 @@ main .gallery .container .card .card-body span img {
   height: 55px;
   margin-bottom: 5px;
 }
+.gallery .container .card .card-body .mongoImg {
+  width: 55px;
+  height: 20px;
+  margin: 0px 0px 5px 0px;
+}
+
 main .playground {
   background-color: #d1f1ff;
+}
+
+main .projects {
+  background-color: rgb(236, 237, 255);
 }
 
 .contact {

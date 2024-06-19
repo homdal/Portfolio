@@ -104,8 +104,17 @@ main .gallery {
     }
   }
 }
+.gallery .container .card .card-body .mongoImg {
+  width: 55px;
+  height: 20px;
+  margin: 0px 0px 5px 0px;
+}
+
 main .playground {
   background-color: #d1f1ff;
+}
+main .projects {
+  background-color: rgb(236, 237, 255);
 }
 
 .contact {

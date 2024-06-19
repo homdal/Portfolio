@@ -1,0 +1,80 @@
+nav {
+  a {
+    text-decoration: none;
+  }
+}
+
+header {
+  @extend %header;
+
+  img {
+    width: 90px;
+    height: 90px;
+    margin: 10px;
+  }
+  .mongoImg {
+    height: 40px;
+  }
+
+  button {
+    @extend %button;
+    margin: 0 5px 0 5px;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+section {
+  width: 100vw;
+  height: auto;
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    width: 80vw;
+    height: 90vh;
+    margin-bottom: 10px;
+  }
+  h4 {
+    color: #292929;
+    margin-top: 40px;
+  }
+}
+
+//media
+
+@media (max-width: 1200px) {
+  section {
+    img {
+      height: 50vh;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  section {
+    img {
+      width: 95vw;
+      height: 50vh;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    img {
+      width: 95vw;
+      height: 50vh;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  section {
+    img {
+      width: 95vw;
+      height: 50vh;
+    }
+  }
+}

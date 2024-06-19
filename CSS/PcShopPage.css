@@ -372,91 +372,42 @@ header a {
 
 section {
   width: 100vw;
-  height: 900px;
-  padding: 10px 0px;
-  position: relative;
+  height: auto;
+  padding-top: 70px;
   display: flex;
-  justify-content: center;
-  align-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+section img {
+  width: 80vw;
+  height: 90vh;
+  margin-bottom: 10px;
+}
+section h4 {
+  color: #292929;
+  margin-top: 40px;
 }
 
 @media (max-width: 1200px) {
-  header div span img {
-    width: 90px;
-    height: 90px;
-  }
   section img {
-    width: 1000px;
-    height: 700px;
+    height: 50vh;
   }
 }
 @media (max-width: 992px) {
-  header button {
-    width: 180px;
-  }
-  section {
-    height: 700px;
-  }
   section img {
-    width: 900px;
-    height: 600px;
+    width: 95vw;
+    height: 50vh;
   }
 }
 @media (max-width: 768px) {
-  nav .logo img {
-    margin-right: 10px;
-  }
-  nav .logo a h4 {
-    display: block;
-  }
-  header {
-    height: 420px;
-  }
-  header h1 {
-    margin-top: 120px;
-  }
-  header button {
-    width: 150px;
-  }
-  header div {
-    height: 90px;
-  }
-  section {
-    height: 550px;
-  }
   section img {
-    width: 500px;
-    height: 400px;
+    width: 95vw;
+    height: 50vh;
   }
 }
 @media (max-width: 576px) {
-  nav .logo img {
-    margin-right: 10px;
-  }
-  nav .logo a h4 {
-    display: block;
-  }
-  header {
-    height: 400px;
-  }
-  header h1 {
-    margin-top: 110px;
-  }
-  header button {
-    width: 150px;
-  }
-  header div {
-    height: 80px;
-  }
-  header div span img {
-    height: 60px;
-    width: 60px;
-  }
-  section {
-    height: 450px;
-  }
   section img {
     width: 95vw;
-    height: 300px;
+    height: 50vh;
   }
-}/*# sourceMappingURL=projectPage.css.map */
+}/*# sourceMappingURL=PcShopPage.css.map */

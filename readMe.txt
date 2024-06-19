@@ -3,7 +3,7 @@
 
 mainPage - דף ראשי \ דף תיק העבודות, יש לפתוח אותו ראשון
 
-projectPage1-12 - דפי הצגת הפרויקטים
+projectPage1-14 - דפי הצגת הפרויקטים
 
 CSS      -  תיקייה המכילה את כל קבצי העיצוב של הדף הראשי ודפי הצגת הפרויקטים בלבד
 
@@ -27,6 +27,8 @@ projectPage9  -  page builder  - פרויקט בונה אתר
 projectPage10 -  XO            - פרויקט איקס עיגול
 projectPage11 -  trivia        - פרויקט טריוויה
 projectPage12 -  pokedex       - פרויקט פוקידקס
+projectPage13 -  browsebiz     - פרויקט אתר כרטיסי ביקור
+projectPage14 -  pcshop        - פרויקט גמר אתר חנות מחשבים
 
  (HTML, CSS, SASS, PNG\SVG, JS, RAR) כל תיקיית פרויקט מכילה את הקבצים ששייכים לפרויקט
 
